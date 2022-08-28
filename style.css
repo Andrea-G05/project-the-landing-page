@@ -9,17 +9,18 @@ body {
 .header {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 300px;
 }
 
-.header ul{
+ul{
     display: flex;
     list-style: none;
 }
 
 .header li {
     margin: 0 10px;
+    font-weight: bold;
 }
 
 .header img {
@@ -30,4 +31,96 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.section-one {
+    background-color: #1F2937;
+    flex-direction: row;
+}
+
+.text {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.text .title {
+    margin: 0;
+}
+
+.text .subtext {
+    color: rgb(169, 169, 169);
+}
+
+.text button {
+    width: 85px;
+    height: 45px;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.section-one img {
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+    text-align: center;
+    line-height: 150px;
+}
+
+.section-two {
+    justify-content: start;
+}
+
+.section-two .title {
+    color: black;
+}
+
+.section-two ul {
+    gap: 30px;
+}
+
+.section-two li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-two img {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.section-two .subtext {
+    text-align: center;
+    color: gray;
+}
+
+.section-three {
+    background-color: rgba(150, 150, 150, 0.668);
 }
